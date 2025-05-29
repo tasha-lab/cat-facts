@@ -188,6 +188,7 @@ input::placeholder {
   background-color: var(--primary-bottom-color);
   width: 100%;
   min-height: 50vh;
+  overflow: hidden;
   padding-left: 8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
