@@ -1,54 +1,56 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cat App</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./src/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Cat App</title>
-</head>
+  <body>
+    <div class="top-section">
+      <div class="header">
+        <h3>the cats app</h3>
+      </div>
 
-<body>
-  <div class="top-section">
-    <div class="header">
-      <h3>the cats app</h3>
+      <form>
+        <span class="cat-facts">
+          <label for="c-facts">number of cats facts (50 maximum)</label>
+          <div class="input1">
+            <input
+              type="number"
+              placeholder="number of cat facts (50 max)"
+              id="number-facts"
+            />
+            <button id="btn-facts">submit</button>
+          </div>
+        </span>
+
+        <span class="cat-images">
+          <label for="c-images">number of cats photos (10 max)</label>
+          <div class="input2">
+            <input
+              type="number"
+              placeholder="number of cat photos (10 max)"
+              id="number-images"
+            />
+            <button id="btn-photos">submit</button>
+          </div>
+        </span>
+      </form>
     </div>
 
-    <form>
-      <span class="cat-facts">
-        <label for="c-facts">number of cats facts (50 maximum)</label>
-        <div class="input1">
-          <input type="number" placeholder="number of cat facts (50 max)">
-          <button>submit</button>
-        </div>
-      </span>
+    <div class="bottom-section-facts" id="myoutput"></div>
 
-      <span class="cat-images">
-        <label for="c-images">number of cats photos (10 max)</label>
-        <div class="input2">
-          <input type="number" placeholder="number of cat photos (10 max)">
-          <button>submit</button>
-        </div>
-      </span>
-    </form>
+    <!-- <div class="bottom-section-images" id="myphotos"></div> -->
 
-  </div>
-
-  <div class="bottom-section">
-    <ol>
-      <li>Contrary to popular belief, the cat is a social animal. A pet cat will respond and answer to speech , and
-        seems to enjoy human companionship.</li>
-      <li>Cats can not taste sweets.</li>
-    </ol>
-  </div>
-
-
-  <script type="module" src="/src/main.js"></script>
-</body>
-
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
