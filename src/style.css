@@ -247,7 +247,8 @@ input::placeholder {
 @media screen and (max-width: 1030px) {
   .bottom-section-facts {
     padding-left: 2.5rem;
-    height:auto;
+    overflow: hidden;
+    /* height:auto; */
   }
   .bottom-section ol {
     /* margin-left: 1rem; */
